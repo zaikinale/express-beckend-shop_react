@@ -1,0 +1,67 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "email": "ZaqXsw111@mail.com",
+            "name": "Andrew",
+            "password": "Qwerty911",
+            "saved": [1, 112, 24, 15],
+            "basket": [
+                {
+                    "id": 1,
+                    "count": 2
+                }, 
+                {
+                    "id": 12,
+                    "count": 24
+                }, 
+                {
+                    "id": 15,
+                    "count": 6
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "email": "postmanfree@mail.com",
+            "name": "Anton",
+            "password": "ZseXdr0423",
+            "saved": [1, 112, 24, 15],
+            "basket": [
+                {
+                    "id": 2,
+                    "count": 6
+                }, 
+                {
+                    "id": 112,
+                    "count": 246
+                }, 
+                {
+                    "id": 135,
+                    "count": 62
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "email": "sdfsdfsdg@mail.com",
+            "name": "Iriska",
+            "password": "admin112",
+            "saved": [134, 22, 27, 18],
+            "basket": [
+                {
+                    "id": 21,
+                    "count": 2
+                }, 
+                {
+                    "id": 52,
+                    "count": 4
+                }, 
+                {
+                    "id": 18,
+                    "count": 9
+                }
+            ]
+        }
+    ] 
+}
