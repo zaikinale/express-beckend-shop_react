@@ -3,6 +3,9 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+const cors = require('cors');
+app.use(cors());
+
 const fs = require('fs');
 const path = require('path');
 
@@ -17,16 +20,16 @@ app.get("/hello", (req, res) => {
     res.send("Hello World!");
 });
 
-app.get("/", (req, res) => {
-    res.send(data);
+app.get("/all", (req, res) => {
+    res.json(data);
 });
 
 app.get("/categories", (req, res) => {
-    res.send(data_categories);
+    res.json(data_categories);
 });
 
 app.get("/products", (req, res) => {
-    res.send(data_products);
+    res.json(data_products);
 });
 
 app.get("/login", (req, res) => {
