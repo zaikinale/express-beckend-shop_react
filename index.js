@@ -10,10 +10,12 @@ const fs = require('fs');
 const path = require('path');
 
 const rawData = fs.readFileSync(path.join(__dirname, './data/data.json'), 'utf8');
+const rawCharacteristics = fs.readFileSync(path.join(__dirname, './data/characteristics.json'), 'utf8');
 const rawUsers = fs.readFileSync(path.join(__dirname, './data/user.json'), 'utf8');
 const data = JSON.parse(rawData);
 const data_categories = JSON.parse(rawData).categories;
 const data_products = JSON.parse(rawData).products;
+const data_products_detail = JSON.parse(rawCharacteristics).products;
 const users = JSON.parse(rawUsers).users;
 
 app.get("/hello", (req, res) => {
@@ -40,15 +42,34 @@ app.get("/register", (req, res) => {
     res.send('хз кто ты');
 });
 
+// app.get("/product/:id", (req, res) => {
+//     const productId = Number(req.params.id);
+//     const foundProduct = data_products.filter(product => product.id === productId);
+
+//     if (foundProduct.length === 0) {
+//         return res.status(404).json({ error: "Product not found" });
+//     }
+
+//     res.json(foundProduct[0]);
+// });
+
 app.get("/product/:id", (req, res) => {
     const productId = Number(req.params.id);
-    const foundProduct = data_products.filter(product => product.id === productId);
 
-    if (foundProduct.length === 0) {
+    const product = data_products.find(p => p.id === productId);
+    if (!product) {
         return res.status(404).json({ error: "Product not found" });
     }
 
-    res.json(foundProduct[0]);
+    const details = data_products_detail.find(d => d.id_product === productId);
+
+    const mergedProduct = {
+        ...product,
+        desc: details?.desc || product.desc || '',
+        characteristics: details?.characteristics || []
+    };
+
+    res.json(mergedProduct);
 });
 
 app.get("/profile/:id", (req, res) => {

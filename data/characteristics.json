@@ -1,0 +1,15 @@
+{
+    "products":
+    [
+        {
+            "id": 1,
+            "id_product": 799,
+            "desc": "",
+            "characteristics": [
+                {
+                    "Материал": "Бумага"
+                }
+            ]
+        }
+    ]
+}

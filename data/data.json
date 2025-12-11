@@ -1279,17 +1279,84 @@
           }
         ],
         "marks": [],
-        "name": "подарочный пакет M67шТЕСТОВЫЙ",
+        "name": "Подарочный пакет",
         "old_price": null,
         "price": 190
+      },
+      {
+        "id": 199,
+        "images": [
+          {
+            "Image_ID": 4869,
+            "Image_URL": "https://noxer-test.ru/webapp/user_files/f.jpg",
+            "MainImage": false,
+            "Product_ID": 799,
+            "position": "product",
+            "sort_order": 1,
+            "title": "керкеркер"
+          },
+          {
+            "Image_ID": 4868,
+            "Image_URL": "https://noxer-test.ru/webapp/user_files/10.webp",
+            "MainImage": false,
+            "Product_ID": 799,
+            "position": "parameters",
+            "sort_order": 0,
+            "title": "онгонгогн"
+          },
+          {
+            "Image_ID": 4871,
+            "Image_URL": "https://noxer-test.ru/webapp/user_files/f.jpg",
+            "MainImage": false,
+            "Product_ID": 799,
+            "position": "parameters",
+            "sort_order": 3,
+            "title": "дщдщдщщ"
+          },
+          {
+            "Image_ID": 5212,
+            "Image_URL": "https://s3.twcstorage.ru/19dc3eea-8d73649f-6043-4e9c-aefd-53f22d062e74/noxer/user_files/S99976fb59c164d30a4a9c4ab300fb06dl.jpg",
+            "MainImage": false,
+            "Product_ID": 799,
+            "position": "product",
+            "sort_order": 4,
+            "title": "S99976fb59c164d30a4a9c4ab300fb06dl.jpg"
+          },
+          {
+            "Image_ID": 4870,
+            "Image_URL": "https://noxer-test.ru/webapp/user_files/f.jpg",
+            "MainImage": true,
+            "Product_ID": 799,
+            "position": "product",
+            "sort_order": 2,
+            "title": "f.jpg"
+          },
+          {
+            "Image_URL": "https://noxer-test.ru/webapp/user_files/istockphoto-878629952-640_adpp_is.mp4",
+            "title": "Черный"
+          }
+        ],
+        "marks": [
+          {
+            "Mark_Name": "hit",
+            "color_code": "#ff6723"
+          },
+          {
+            "Mark_Name": "sale",
+            "color_code": "#ffca28"
+          }
+        ],
+        "name": "Наушники JBL 770NC",
+        "old_price": 8900,
+        "price": 5900
       },
       {
         "id": 5236,
         "images": [],
         "marks": [],
-        "name": "Вам крышка",
+        "name": "Спиннинг Удача",
         "old_price": null,
-        "price": 0
+        "price": 2109
       },
       {
         "id": 5043,
@@ -1343,7 +1410,7 @@
             "color_code": "#ff6723"
           }
         ],
-        "name": "тестик свежийф",
+        "name": "Чехол на macbook air 13",
         "old_price": null,
         "price": 3000
       },
@@ -1370,9 +1437,9 @@
             "color_code": "#ffca28"
           }
         ],
-        "name": "Товар",
-        "old_price": null,
-        "price": 3000
+        "name": "Realme 12 pro 8/256gb",
+        "old_price": 38900,
+        "price": 34000
       },
       {
         "id": 1728,
@@ -1466,8 +1533,8 @@
           }
         ],
         "name": "Airpods Pro 3",
-        "old_price": 55,
-        "price": 26
+        "old_price": 30000,
+        "price": 26000
       },
       {
         "id": 3,
@@ -1539,7 +1606,7 @@
         ],
         "name": "Кроссовки NIKE Gamma Force",
         "old_price": null,
-        "price": 4
+        "price": 4800
       },
       {
         "id": 797,
@@ -1569,17 +1636,17 @@
         ],
         "marks": [
           {
-            "Mark_Name": "hit",
-            "color_code": "#ff6723"
-          },
-          {
             "Mark_Name": "new",
             "color_code": "#45b649"
+          },
+          {
+            "Mark_Name": "sale",
+            "color_code": "#ffca28"
           }
         ],
         "name": "Рюкзак",
-        "old_price": 685,
-        "price": 490
+        "old_price": 6850,
+        "price": 5900
       },
       {
         "id": 5095,
@@ -1595,17 +1662,17 @@
           }
         ],
         "marks": [],
-        "name": "ноунейм проверка",
+        "name": "Часы Casio Montana",
         "old_price": null,
-        "price": 1000
+        "price": 2490
       },
       {
         "id": 5097,
         "images": [],
         "marks": [],
-        "name": "последний товар",
+        "name": "Macbook Air 15` m2 16/512gb",
         "old_price": null,
-        "price": 5000
+        "price": 119000
       },
       {
         "id": 5208,
@@ -1630,9 +1697,9 @@
           }
         ],
         "marks": [],
-        "name": "нвоый крутой классный не ломающийся",
+        "name": "the Witcher 3 образ на диске",
         "old_price": null,
-        "price": 1000
+        "price": 7900
       },
       {
         "id": 5209,
@@ -1670,7 +1737,7 @@
             "color_code": "#45b649"
           }
         ],
-        "name": "реальный товар Тумбочка",
+        "name": "Тумбочка от IKEA",
         "old_price": null,
         "price": 10000
       },
@@ -1678,15 +1745,15 @@
         "id": 5212,
         "images": [],
         "marks": [],
-        "name": "первый первый",
+        "name": "Коврик из Игры Пристолов",
         "old_price": null,
-        "price": 1000
+        "price": 999000
       },
       {
         "id": 5220,
         "images": [],
         "marks": [],
-        "name": "проверка тэгов",
+        "name": "Бассейн детский самонадувающийся",
         "old_price": null,
         "price": 800
       },
@@ -1694,9 +1761,9 @@
         "id": 5222,
         "images": [],
         "marks": [],
-        "name": "первый первый",
+        "name": "Ведьмак первые 7 томов, автора Анджея Сапковского",
         "old_price": null,
-        "price": 1000
+        "price": 2990
       },
       {
         "id": 5227,
@@ -1721,9 +1788,9 @@
             "color_code": "#7561e8"
           }
         ],
-        "name": "тестовый товар удалить",
-        "old_price": null,
-        "price": 6000
+        "name": "Кофе зерновой Brazilia Santos, 1кг",
+        "old_price": 4129,
+        "price": 3299
       },
       {
         "id": 5228,
@@ -1748,14 +1815,14 @@
             "color_code": "#7561e8"
           }
         ],
-        "name": "сломайся пожалуйста",
+        "name": "Картина BMW 5 серии в кузове F90, 40*60см",
         "old_price": null,
-        "price": 2000
+        "price": 1300
       }
     ],
     "special_project_parameters": {
       "PAYMENT_SYSTEM_INSERT_TEXT_description": "Спасибо за заказ в нашем царстве",
-      "PAYMENT_SYSTEM_INSERT_TEXT_extra_field_1": "Не потеряй гордость, заплати нашему царю за товаррZX",
+      "PAYMENT_SYSTEM_INSERT_TEXT_extra_field_1": "Не потеряй гордость, заплати нашему царю за товар",
       "PAYMENT_SYSTEM_INSERT_TEXT_value": "1",
       "PAYMENT_SYSTEM_value": "tochka_bank_system",
       "SERVER_IP_ADDR_description": "http://localhost:7777",
