@@ -55,6 +55,8 @@ app.get("/register", (req, res) => {
 //     res.json(foundProduct[0]);
 // });
 
+
+// Добавить рейтинг вычислительный исходя из отзавов на товар
 app.get("/product/:id", (req, res) => {
     const productId = Number(req.params.id);
 
@@ -64,14 +66,36 @@ app.get("/product/:id", (req, res) => {
     }
 
     const details = data_products_detail.find(d => d.id_product === productId);
+    const reviews = data_products_reviews.find(r => r.id_product === productId);
 
-    const reviews = data_products_reviews.find(r => r.id_product === productId)
+
+    function generateRatingProduct(productId) {
+        const reviewEntry = data_products_reviews.find(entry => entry.id_product === productId);
+
+        if (!reviewEntry || !reviewEntry.reviews_product?.length) {
+            return 0;
+        }
+
+        const ratings = reviewEntry.reviews_product
+            .map(review => review.raiting)
+            .filter(rating => typeof rating === 'number');
+
+        if (ratings.length === 0) {
+            return 0;
+        }
+
+        const sum = ratings.reduce((acc, r) => acc + r, 0);
+        const average = sum / ratings.length;
+
+        return Number(average.toFixed(1));
+    }
 
     const mergedProduct = {
         ...product,
         desc: details?.desc || product.desc || '',
         characteristics: details?.characteristics || [],
-        reviews: reviews?.reviews_product || product.reviews_product || ''
+        reviews: reviews?.reviews_product || product.reviews_product || '',
+        raiting: generateRatingProduct(productId)
     };
 
     res.json(mergedProduct);
