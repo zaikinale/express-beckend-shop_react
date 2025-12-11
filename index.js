@@ -95,7 +95,7 @@ app.get("/product/:id", (req, res) => {
         desc: details?.desc || product.desc || '',
         characteristics: details?.characteristics || [],
         reviews: reviews?.reviews_product || product.reviews_product || '',
-        raiting: generateRatingProduct(productId)
+        average_raiting: generateRatingProduct(productId)
     };
 
     res.json(mergedProduct);
