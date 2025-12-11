@@ -9,8 +9,8 @@ app.use(cors());
 const fs = require('fs');
 const path = require('path');
 
-const rawData = fs.readFileSync(path.join(__dirname, './datas/data.json'), 'utf8');
-const rawUsers = fs.readFileSync(path.join(__dirname, './datas/user.json'), 'utf8');
+const rawData = fs.readFileSync(path.join(__dirname, './data/data.json'), 'utf8');
+const rawUsers = fs.readFileSync(path.join(__dirname, './data/user.json'), 'utf8');
 const data = JSON.parse(rawData);
 const data_categories = JSON.parse(rawData).categories;
 const data_products = JSON.parse(rawData).products;
@@ -50,7 +50,6 @@ app.get("/product/:id", (req, res) => {
 
     res.json(foundProduct[0]);
 });
-
 
 app.get("/profile/:id", (req, res) => {
     const userId = Number(req.params.id);
