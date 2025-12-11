@@ -11,11 +11,13 @@ const path = require('path');
 
 const rawData = fs.readFileSync(path.join(__dirname, './data/data.json'), 'utf8');
 const rawCharacteristics = fs.readFileSync(path.join(__dirname, './data/characteristics.json'), 'utf8');
+const rawReviews = fs.readFileSync(path.join(__dirname, './data/reviews.json'), 'utf8');
 const rawUsers = fs.readFileSync(path.join(__dirname, './data/user.json'), 'utf8');
 const data = JSON.parse(rawData);
 const data_categories = JSON.parse(rawData).categories;
 const data_products = JSON.parse(rawData).products;
 const data_products_detail = JSON.parse(rawCharacteristics).products;
+const data_products_reviews = JSON.parse(rawReviews).reviews;
 const users = JSON.parse(rawUsers).users;
 
 app.get("/hello", (req, res) => {
@@ -63,10 +65,13 @@ app.get("/product/:id", (req, res) => {
 
     const details = data_products_detail.find(d => d.id_product === productId);
 
+    const reviews = data_products_reviews.find(r => r.id_product === productId)
+
     const mergedProduct = {
         ...product,
         desc: details?.desc || product.desc || '',
-        characteristics: details?.characteristics || []
+        characteristics: details?.characteristics || [],
+        reviews: reviews?.reviews_product || product.reviews_product || ''
     };
 
     res.json(mergedProduct);

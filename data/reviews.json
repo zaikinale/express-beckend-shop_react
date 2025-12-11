@@ -1,0 +1,21 @@
+{
+    "reviews": [
+        {
+            "id": 1,
+            "id_product": 799,
+            "reviews_product": [
+                {
+                    "id_user": 1,
+                    "text": "Отлично выглядит, самое то под подарок для родных!)",
+                    "raiting": 5
+                },
+                {
+                    "id_user": 2,
+                    "text": "Хуйня ",
+                    "raiting": 1
+                }
+            ]
+            
+        }
+    ]
+}
